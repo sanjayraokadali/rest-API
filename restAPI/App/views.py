@@ -20,6 +20,7 @@ def base(request):
 
     elif request.method == 'POST':
 
+
         data = JSONParser().parse(request)
 
         s = BookSerializer(data = data)
